@@ -56,9 +56,9 @@ const teamMembers = [
     designation: "Board Members",
     members: [
       {
-        name: "John Doe",
-        designation: "Club President",
-        image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/image.png",
+        name: "Shivansh Tanwar",
+        designation: "Secretary",
+        image: "/shivans.JPG",
         description: "Astrophysics enthusiast with a passion for deep space exploration",
         socials: {
           github: "https://github.com/johndoe",
@@ -68,9 +68,9 @@ const teamMembers = [
         },
       },
       {
-        name: "Jane Doe",
-        designation: "Vice President",
-        image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/shi.png",
+        name: "Shreya Singh ",
+        designation: "Advisor",
+        image: "/shreya.JPG",
         description: "Focusing on outreach and member engagement",
         socials: {
           github: "https://github.com/janedoe",
@@ -78,9 +78,9 @@ const teamMembers = [
         },
       },
       {
-        name: "Mark Smith",
-        designation: "Secretary",
-        image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/aeshni.png",
+        name: "Aeshni",
+        designation: "Joint Secretary",
+        image: "/ashini.JPG",
         description: "Ensuring smooth operations and documentation",
         socials: {
           github: "https://github.com/marksmith",
@@ -93,10 +93,10 @@ const teamMembers = [
     designation: "Technical Team",
     members: [
       {
-        name: "John Doe",
-        designation: "Club President",
-        image: "https://avatars.githubusercontent.com/u/129139486?s=400",
-        description: "Astrophysics enthusiast with a passion for deep space exploration",
+        name: "Vaibhav Kothari",
+        designation: "Tech-Managment Co-head",
+        image: "/vaibhavkothari.JPG",
+        description: "Fullstack developer with a passion for deep space exploration",
         socials: {
           github: "https://github.com/johndoe",
           linkedin: "https://linkedin.com/in/johndoe",
@@ -105,18 +105,18 @@ const teamMembers = [
         },
       },
       {
-        name: "Jane Doe",
-        designation: "Vice President",
-        image: "https://avatars.githubusercontent.com/u/129139486?s=400",
-        description: "Focusing on outreach and member engagement",
+        name: "Photographer",
+        designation: "photographer",
+        image: "/photo.JPG",
+        description: "Focusing on clicking photos",
         socials: {
           github: "https://github.com/janedoe",
           linkedin: "https://linkedin.com/in/janedoe",
         },
       },
       {
-        name: "Mark Smith",
-        designation: "Secretary",
+        name: "Om gupta",
+        designation: "Tech-Managment Head",
         image: "https://avatars.githubusercontent.com/u/129139486?s=400",
         description: "Ensuring smooth operations and documentation",
         socials: {
