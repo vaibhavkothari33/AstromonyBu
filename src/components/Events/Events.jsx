@@ -65,7 +65,7 @@ const Events = () => {
   return (
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden text-white">
       {/* Star dots container */}
-      <div className="fixed inset-0 overflow-hidden">{generateStarDots(500)}</div>
+      <div className="fixed inset-0 overflow-hidden">{generateStarDots(250)}</div>
 
       <div className="max-w-7xl mx-auto relative">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">

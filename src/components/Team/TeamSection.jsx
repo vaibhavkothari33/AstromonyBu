@@ -25,7 +25,7 @@ const TeamSection = () => {
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden">
       {/* Star dots container */}
       <div className="fixed inset-0 overflow-hidden">
-        {generateStarDots(500)}
+        {generateStarDots(250)}
       </div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Our Team</h2>

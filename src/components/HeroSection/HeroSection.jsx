@@ -44,7 +44,7 @@ const HeroSection = () => {
     <div className=" bg-black pt-24 pb-16 px-4 overflow-hidden">
       {/* Star dots container */}
       <div className="fixed inset-0 overflow-hidden">
-        {generateStarDots(500)}
+        {generateStarDots(250)}
       </div>
 
       <div className="relative z-10 container mx-auto px-4 flex flex-col justify-center items-center min-h-screen text-center">

@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { Github, Linkedin, Instagram,X } from 'lucide-react';
+import { Github, Linkedin, Instagram, X } from 'lucide-react';
 
-const TeamMemberCard = ({ 
-  name, 
-  designation, 
-  image = null, 
-  socials = {}, 
-  description 
+const TeamMemberCard = ({
+  name,
+  designation,
+  image = null,
+  socials = {},
+  description
 }) => {
   return (
     <div className="group relative overflow-hidden rounded-lg bg-white/5 p-6 hover:bg-white/10 transition-all duration-300
@@ -18,12 +18,12 @@ const TeamMemberCard = ({
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      
+
       <div className="text-center">
         <h3 className="text-xl font-bold text-white mb-2">{name}</h3>
         <p className="text-purple-400 font-medium mb-3">{designation}</p>
         <p className="text-gray-300 text-sm mb-4">{description}</p>
-        
+
         <div className="flex justify-center gap-4">
           {socials?.github && (
             <a href={socials.github} className="text-gray-400 hover:text-white transition-colors">

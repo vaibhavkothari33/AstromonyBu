@@ -56,7 +56,7 @@ const News = () => {
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden">
     {/* Star dots container */}
     <div className="fixed inset-0 overflow-hidden">
-      {generateStarDots(500)}
+      {generateStarDots(250)}
     </div>
     <div className="relative min-h-screen bg-black text-white pt-24 pb-16 px-4 overflow-hidden">
       <h2 className="text-4xl font-bold text-center text-white mb-16">Astronomy Facts & News</h2>
