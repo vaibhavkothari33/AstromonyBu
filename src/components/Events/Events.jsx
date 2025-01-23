@@ -8,7 +8,7 @@ const Events = () => {
       date: "2024-01-15",
       time: "20:00 - 23:00",
       location: "University Observatory",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool2.jpg",
+      image: "/cool3.png",
       description:
         "Join us for an enchanting evening of stargazing. We'll be observing Jupiter and its moons, along with deep-sky objects visible this season.",
       highlighted: true,
@@ -19,7 +19,7 @@ const Events = () => {
       date: "2024-02-10",
       time: "16:00 - 18:00",
       location: "Physics Laboratory",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg",
+      image: "/cool2.png",
       description:
         "Learn the basics of astrophotography, from camera settings to post-processing techniques. Bring your DSLR camera if you have one!",
     },
@@ -29,7 +29,7 @@ const Events = () => {
       date: "2024-03-20",
       time: "14:30 - 16:30",
       location: "University Ground",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool1.jpg",
+      image: "/image.png",
       description:
         "Experience the partial solar eclipse with proper safety equipment. Educational session included about the mechanics of eclipses.",
     },
@@ -39,7 +39,7 @@ const Events = () => {
       date: "2024-03-25",
       time: "10:00 - 12:00",
       location: "Auditorium",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/image1111.png",
+      image: "/cool1.png",
       description:
         "Dive into the history of space exploration, from the Apollo missions to the latest Mars rovers. A fascinating session for space enthusiasts.",
     },

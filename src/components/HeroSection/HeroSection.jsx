@@ -23,19 +23,19 @@ const HeroSection = () => {
     {
       icon: Telescope,
       title: "Observe",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg",
+      image: "/cool3.png",
       description: "Night sky tracking and telescope sessions",
     },
     {
       icon: BookOpen,
       title: "Research",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg",
+      image: "/cool1.png",
       description: "Collaborative astronomical research projects",
     },
     {
       icon: Globe,
       title: "Educate",
-      image: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg",
+      image: "/cool2.png",
       description: "Public workshops and stargazing events",
     },
   ];

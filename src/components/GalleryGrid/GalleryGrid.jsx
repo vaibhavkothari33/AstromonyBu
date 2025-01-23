@@ -1,18 +1,18 @@
 const GalleryGrid = () => {
 
     const galleryItems = [
-        { id: 1, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool1.jpg", alt: "vaibhav 1" },
-        { id: 2, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/image1111.png", alt: "Event 2" },
-        { id: 3, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg", alt: "Event 3" },
-        { id: 3, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool2.jpg", alt: "Event 3" },
-        { id: 1, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool1.jpg", alt: "vaibhav 1" },
-        { id: 2, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/image1111.png", alt: "Event 2" },
-        { id: 3, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg", alt: "Event 3" },
-        { id: 3, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool2.jpg", alt: "Event 3" },
-        { id: 1, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool1.jpg", alt: "vaibhav 1" },
-        { id: 2, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/image1111.png", alt: "Event 2" },
-        { id: 3, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool3.jpg", alt: "Event 3" },
-        { id: 3, src: "http://vaibhavkothari.me/Astronomy/Space%20Connect/image/cool2.jpg", alt: "Event 3" },
+        { id: 1, src: "image.png", alt: "vaibhav 1" },
+        { id: 2, src: "/cool1.png", alt: "Event 2" },
+        { id: 3, src: "/cool2.png", alt: "Event 3" },
+        { id: 3, src: "/cool3.png", alt: "Event 3" },
+        { id: 1, src: "image.png", alt: "vaibhav 1" },
+        { id: 2, src: "/cool1.png", alt: "Event 2" },
+        { id: 3, src: "/cool2.png", alt: "Event 3" },
+        { id: 3, src: "/cool3.png", alt: "Event 3" },
+        { id: 1, src: "image.png", alt: "vaibhav 1" },
+        { id: 2, src: "/cool1.png", alt: "Event 2" },
+        { id: 3, src: "/cool2.png", alt: "Event 3" },
+        { id: 3, src: "/cool3.png", alt: "Event 3" },
        
     ];
   // Generate stars as small dots

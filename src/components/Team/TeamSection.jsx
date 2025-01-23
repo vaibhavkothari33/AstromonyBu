@@ -107,7 +107,7 @@ const teamMembers = [
       {
         name: "Photographer",
         designation: "photographer",
-        image: "/photo.JPG",
+        image: "/ayush.JPG",
         description: "Focusing on clicking photos",
         socials: {
           github: "https://github.com/janedoe",
