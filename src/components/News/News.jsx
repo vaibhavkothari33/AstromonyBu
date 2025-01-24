@@ -25,7 +25,7 @@ const News = () => {
   const [error, setError] = useState(null);
 
   const NASA_API_KEY = conf.nasaApi;
-  const APOD_URL = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&count=9`;
+  const APOD_URL = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&count=15`;
 
   useEffect(() => {
     const fetchData = async () => {
