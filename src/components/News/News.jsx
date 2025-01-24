@@ -69,7 +69,7 @@ const News = () => {
       <h2 className="text-4xl font-bold text-center text-white mb-16">Astronomy Facts & News</h2>
 
       {/* Facts grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 bg-black md:grid-cols-2 lg:grid-cols-3 gap-8">
         {facts.map((fact, index) => (
           <div key={index} className="rounded-lg text-white bg-gray-800 p-4">
             <img
