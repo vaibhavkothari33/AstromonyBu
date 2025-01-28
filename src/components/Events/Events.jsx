@@ -1,5 +1,5 @@
 import { Calendar, Clock, MapPin, Star } from 'lucide-react';
-
+import Stars from '../HeroSection/Stars';
 const Events = () => {
   const events = [
     {
@@ -45,28 +45,11 @@ const Events = () => {
     },
   ];
 
-  // Generate stars as small dots
-  const generateStarDots = (count) => {
-    return [...Array(count)].map((_, i) => (
-      <div
-        key={i}
-        className="absolute w-0.5 h-0.5 bg-white rounded-full animate-rise"
-        style={{
-          left: `${Math.random() * 100}%`,
-          bottom: '-4px',
-          opacity: Math.random() * 0.7 + 0.3,
-          animationDelay: `${Math.random() * 5}s`,
-          animationDuration: `${Math.random() * 2 + 3}s`,
-        }}
-      />
-    ));
-  };
+
 
   return (
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden text-white">
-      {/* Star dots container */}
-      <div className="fixed inset-0 overflow-hidden">{generateStarDots(250)}</div>
-
+     <Stars/>
       <div className="max-w-7xl mx-auto relative">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Our Events

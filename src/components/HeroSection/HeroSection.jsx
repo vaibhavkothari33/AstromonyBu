@@ -1,23 +1,10 @@
 import { Instagram, Linkedin } from 'lucide-react';
 import { Telescope, BookOpen, Globe } from 'lucide-react';
 import Card from './CardGrid';
+import Stars from './Stars';
 const HeroSection = () => {
   // Generate stars as small dots
-  const generateStarDots = (count) => {
-    return [...Array(count)].map((_, i) => (
-      <div
-        key={i}
-        className="absolute w-0.5 h-0.5 bg-white rounded-full animate-rise"
-        style={{
-          left: `${Math.random() * 100}%`,
-          bottom: '-4px',
-          opacity: Math.random() * 0.7 + 0.3,
-          animationDelay: `${Math.random() * 5}s`,
-          animationDuration: `${Math.random() * 2 + 3}s`
-        }}
-      />
-    ));
-  };
+  
 
   const cardData = [
     {
@@ -42,10 +29,7 @@ const HeroSection = () => {
 
   return (
     <div className=" bg-black pt-24 pb-16 px-4 overflow-hidden">
-      {/* Star dots container */}
-      <div className="fixed inset-0 overflow-hidden">
-        {generateStarDots(250)}
-      </div>
+     <Stars/>
 
       <div className="relative z-10 container mx-auto px-4 flex flex-col justify-center items-center min-h-screen text-center">
         {/* Large Centered Title */}
