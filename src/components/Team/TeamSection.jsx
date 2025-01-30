@@ -5,13 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Stars from '../HeroSection/Stars';
 
 const TeamSection = () => {
-  // Generate stars as small dots
-  
-
   return (
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden">
       {/* Star dots container */}
-      <Stars/>
+      <Stars />
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Our Team</h2>
 
@@ -21,20 +18,33 @@ const TeamSection = () => {
             <h3 className="text-2xl font-semibold text-purple-400 mb-8 text-center">
               {section.designation}
             </h3>
-            <Slider {...sliderSettings}>
-              {section.members.map((member) => (
-                <div key={member.name} className="p-4">
-                  <TeamMemberCard {...member} />
-                </div>
-              ))}
-            </Slider>
+
+            {/* Check if the section has less than 4 members */}
+            {section.members.length < 3 ? (
+              <div className="flex justify-center gap-4">
+                {/* If less than 4 members, render them without carousel */}
+                {section.members.map((member) => (
+                  <div key={member.name} className="p-4 w-64">
+                    <TeamMemberCard {...member} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              // If 4 or more members, render them using Slider
+              <Slider {...sliderSettings}>
+                {section.members.map((member) => (
+                  <div key={member.name} className="p-4 w-64">
+                    <TeamMemberCard {...member} />
+                  </div>
+                ))}
+              </Slider>
+            )}
           </div>
         ))}
       </div>
     </div>
   );
 };
-
 // Sample team data, you'll need to import or define this in your component
 const teamMembers = [
   {
@@ -75,8 +85,18 @@ const teamMembers = [
     ],
   },
   {
-    designation: "Technical Team",
+    designation: "Tech & Managment Team",
     members: [
+      {
+        name: "Om gupta",
+        designation: "Tech-Managment Head",
+        image: "/image.png",
+        description: "Ensuring smooth operations and documentation",
+        socials: {
+          // github: "https://github.com/marksmith",
+          // linkedin: "https://linkedin.com/in/marksmith",
+        },
+      },
       {
         name: "Vaibhav Kothari",
         designation: "Tech-Managment Co-head",
@@ -90,9 +110,9 @@ const teamMembers = [
         },
       },
       {
-        name: "Photographer",
-        designation: "photographer",
-        image: "/ayush.JPG",
+        name: "Mantra bhai",
+        designation: "robot",
+        image: "/image.png",
         description: "Focusing on clicking photos",
         socials: {
           github: "https://github.com/janedoe",
@@ -100,15 +120,17 @@ const teamMembers = [
         },
       },
       {
-        name: "Om gupta",
-        designation: "Tech-Managment Head",
-        image: "",
-        description: "Ensuring smooth operations and documentation",
+        name: "Yatishi Agarwal",
+        designation: "Tech-Managment Member",
+        image: "https://i.ibb.co/2Ypfw947/Screenshot-2025-01-31-024904.png",
+        description: "idk!",
         socials: {
-          github: "https://github.com/marksmith",
-          linkedin: "https://linkedin.com/in/marksmith",
+          instagram: "https://instagram.com/yatishi_dz",
+          // github: "https://github.com/marksmith",
+          // linkedin: "https://linkedin.com/in/marksmith",
         },
       },
+
     ],
   },
   // PR team
@@ -118,7 +140,7 @@ const teamMembers = [
       {
         name: "Shubhangi Sarkar",
         designation: "PR & Outreach Head",
-        image: "https://i.ibb.co/6Rx5g5XH/Screenshot-2025-01-30-170327.png", 
+        image: "https://i.ibb.co/6Rx5g5XH/Screenshot-2025-01-30-170327.png",
         description: "Zoo Wee Mama",
         socials: {
           linkedin: "https://www.linkedin.com/in/shubhangi-sarkar-aba206276/",
@@ -128,7 +150,7 @@ const teamMembers = [
       {
         name: "Aniket Kumar ",
         designation: "PR & Outreach Member",
-        image: "https://i.ibb.co/RG9TxkJs/Screenshot-2025-01-30-170840.png", 
+        image: "https://i.ibb.co/RG9TxkJs/Screenshot-2025-01-30-170840.png",
         description: "Communication skills so goated ppl call me communiket.",
         socials: {
           instagram: "https://www.instagram.com/anikett._.k",
@@ -137,14 +159,14 @@ const teamMembers = [
       {
         name: "Parv Gurung",
         designation: "PR & Outreach Member",
-        image: "./black.png", 
+        image: "./black.png",
         description: "Trailblazing through this life",
         socials: {
           instagram: "https://www.instagram.com/gurungparv",
-          linkedin:"https://www.linkedin.com/in/parv-gurung-3a477b30a",
+          linkedin: "https://www.linkedin.com/in/parv-gurung-3a477b30a",
         },
       },
-    
+
     ],
   },
   //  content team
@@ -154,19 +176,19 @@ const teamMembers = [
       {
         name: "Yash Motiani",
         designation: "Content Head",
-        image: "https://i.ibb.co/RTkPrN9w/Screenshot-2025-01-30-173932.png", 
+        image: "https://i.ibb.co/RTkPrN9w/Screenshot-2025-01-30-173932.png",
         description: "I like my planet the same way I like my cereal: with no aliens on it.",
         socials: {
           linkedin: "https://www.linkedin.com/in/yash-motiani070/",
           instagram: "https://www.instagram.com/yashonlyme7",
-          x:"https://x.com/Yashonlyme7",
+          x: "https://x.com/Yashonlyme7",
         },
       },
 
       {
         name: "Manasvi Srivastava ",
         designation: "Content Member",
-        image: "https://i.ibb.co/cnfW0yL/Screenshot-2025-01-30-181530.png", 
+        image: "https://i.ibb.co/cnfW0yL/Screenshot-2025-01-30-181530.png",
         description: "Living life to the fullest:)",
         socials: {
           instagram: "https://www.instagram.com/manasvii.x",
@@ -182,7 +204,7 @@ const teamMembers = [
       {
         name: "Kartik Gupta",
         designation: "Social Media Head",
-        image: "https://i.ibb.co/qLvXv7Fp/Screenshot-2025-01-30-171135.png", 
+        image: "https://i.ibb.co/qLvXv7Fp/Screenshot-2025-01-30-171135.png",
         description: "Stars await for each of us.",
         socials: {
           linkedin: "https://www.linkedin.com/in/kartik-gupta-038473322",
@@ -193,13 +215,13 @@ const teamMembers = [
       {
         name: "Aditya Sharma",
         designation: "Social Media Member",
-        image: "https://i.ibb.co/jvntmjtS/Screenshot-2025-01-30-174434.png", 
+        image: "https://i.ibb.co/jvntmjtS/Screenshot-2025-01-30-174434.png",
         description: "Curiosity tracks some important questions.",
         socials: {
           instagram: "https://www.instagram.com/anikett._.k",
         },
       },
-    
+
     ],
   },
   // multimedia
@@ -209,17 +231,16 @@ const teamMembers = [
       {
         name: "Shardul Dhekane (𝙎𝙋𝙄𝙍𝙄𝙏)",
         designation: "Multi-Media Head",
-        image: "https://i.ibb.co/xSgH7NMd/Screenshot-2025-01-30-175539.png", 
+        image: "https://i.ibb.co/xSgH7NMd/Screenshot-2025-01-30-175539.png",
         description: "Live Laugh Love",
         socials: {
           linkedin: "www.linkedin.com/in/shardul-dhekane",
           instagram: "www.instagram.com/probably_its_spirit",
-          x:"https://x.com/ProbablyIts_Me"
+          x: "https://x.com/ProbablyIts_Me"
         },
       },
-
       {
-        name: "Awush Swami",
+        name: "Ayush Swami",
         designation: "Multi-Media Member",
         image: "/ayush.JPG",
         description: "Focusing on clicking photos",
@@ -228,18 +249,29 @@ const teamMembers = [
           linkedin: "https://linkedin.com/in/janedoe",
         },
       },
+      {
+        name: "Kaavya Kumar",
+        designation: "Multi-Media Member",
+        image: "https://i.ibb.co/0R67tC44/Screenshot-2025-01-31-014906.png",
+        description: "Gald to be with them, to be here, to be me.",
+        socials: {
+          // github: "https://github.com/janedoe",
+          // linkedin: "https://linkedin.com/in/janedoe",
+          instagram: "www.instagram.com/kaavya_kumaleo",
+        },
+      },
 
       {
         name: "Aditya Sharma",
         designation: "Multi-Media Member",
-        image: "https://i.ibb.co/mCqWBXpw/Screenshot-2025-01-30-180924.png", 
+        image: "https://i.ibb.co/mCqWBXpw/Screenshot-2025-01-30-180924.png",
         description: "To infinity and beyond.",
         socials: {
           instagram: "https://www.instagram.com/abhi_ncd/",
-          linkedin:"https://www.linkedin.com/in/abhimanyu-narang-768758326/",
+          linkedin: "https://www.linkedin.com/in/abhimanyu-narang-768758326/",
         },
       },
-    
+
     ],
   },
   // finance core
@@ -249,24 +281,14 @@ const teamMembers = [
       {
         name: "Anannyo Roy",
         designation: "Finance Core Member",
-        image: "https://i.ibb.co/Csn4PBVL/Screenshot-2025-01-30-181217.png", 
+        image: "https://i.ibb.co/Csn4PBVL/Screenshot-2025-01-30-181217.png",
         description: "🗣️🔥",
         socials: {
           linkedin: "https://www.linkedin.com/in/anannyo-roy/",
           instagram: "https://www.instagram.com/help_pls_idk",
         },
       },
-      {
-        name: "Aditya Sharma",
-        designation: "Multi-Media Member",
-        image: "https://i.ibb.co/mCqWBXpw/Screenshot-2025-01-30-180924.png", 
-        description: "To infinity and beyond.",
-        socials: {
-          instagram: "https://www.instagram.com/abhi_ncd/",
-          linkedin:"https://www.linkedin.com/in/abhimanyu-narang-768758326/",
-        },
-      },
-    
+
     ],
   },
 ];
@@ -294,5 +316,6 @@ const sliderSettings = {
     },
   ],
 };
+
 
 export default TeamSection;

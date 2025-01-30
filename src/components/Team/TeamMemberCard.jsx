@@ -9,8 +9,7 @@ const TeamMemberCard = ({
   description
 }) => {
   return (
-    <div className="group relative overflow-hidden rounded-lg bg-white/5 p-6 hover:bg-white/10 transition-all duration-300
-                    animate-fade-up opacity-0 transform translate-y-8">
+    <div className="group relative overflow-hidden rounded-lg bg-white/5 p-6 hover:bg-white/10 transition-all duration-300 animate-fade-up opacity-0 transform translate-y-8">
       <div className="aspect-square mb-4 overflow-hidden rounded-lg">
         <img
           src={image}
@@ -59,7 +58,8 @@ TeamMemberCard.propTypes = {
   socials: PropTypes.shape({
     github: PropTypes.string,
     linkedin: PropTypes.string,
-    instagram: PropTypes.string
+    instagram: PropTypes.string,
+    x: PropTypes.string
   })
 };
 
