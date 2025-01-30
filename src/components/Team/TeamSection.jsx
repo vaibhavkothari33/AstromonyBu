@@ -254,21 +254,8 @@ const teamMembers = [
         socials: {
           linkedin: "https://www.linkedin.com/in/anannyo-roy/",
           instagram: "https://www.instagram.com/help_pls_idk",
-          x:"https://x.com/ProbablyIts_Me"
         },
       },
-
-      {
-        name: "Awush Swami",
-        designation: "Multi-Media Member",
-        image: "/ayush.JPG",
-        description: "Focusing on clicking photos",
-        socials: {
-          github: "https://github.com/janedoe",
-          linkedin: "https://linkedin.com/in/janedoe",
-        },
-      },
-
       {
         name: "Aditya Sharma",
         designation: "Multi-Media Member",
