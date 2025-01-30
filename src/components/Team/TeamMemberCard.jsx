@@ -40,8 +40,8 @@ const TeamMemberCard = ({
               <Instagram className="h-5 w-5" />
             </a>
           )}
-          {socials?.instagram && (
-            <a href={socials.instagram} className="text-gray-400 hover:text-white transition-colors">
+          {socials?.x && (
+            <a href={socials.x} className="text-gray-400 hover:text-white transition-colors">
               <X className="h-5 w-5" />
             </a>
           )}

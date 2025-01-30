@@ -102,13 +102,184 @@ const teamMembers = [
       {
         name: "Om gupta",
         designation: "Tech-Managment Head",
-        image: "https://avatars.githubusercontent.com/u/129139486?s=400",
+        image: "",
         description: "Ensuring smooth operations and documentation",
         socials: {
           github: "https://github.com/marksmith",
           linkedin: "https://linkedin.com/in/marksmith",
         },
       },
+    ],
+  },
+  // PR team
+  {
+    designation: "Public Relation & Outreach Team",
+    members: [
+      {
+        name: "Shubhangi Sarkar",
+        designation: "PR & Outreach Head",
+        image: "https://i.ibb.co/6Rx5g5XH/Screenshot-2025-01-30-170327.png", 
+        description: "Zoo Wee Mama",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/shubhangi-sarkar-aba206276/",
+          instagram: "https://www.instagram.com/_aloo.posto",
+        },
+      },
+      {
+        name: "Aniket Kumar ",
+        designation: "PR & Outreach Member",
+        image: "https://i.ibb.co/RG9TxkJs/Screenshot-2025-01-30-170840.png", 
+        description: "Communication skills so goated ppl call me communiket.",
+        socials: {
+          instagram: "https://www.instagram.com/anikett._.k",
+        },
+      },
+      {
+        name: "Parv Gurung",
+        designation: "PR & Outreach Member",
+        image: "./black.png", 
+        description: "Trailblazing through this life",
+        socials: {
+          instagram: "https://www.instagram.com/gurungparv",
+          linkedin:"https://www.linkedin.com/in/parv-gurung-3a477b30a",
+        },
+      },
+    
+    ],
+  },
+  //  content team
+  {
+    designation: "Content Team",
+    members: [
+      {
+        name: "Yash Motiani",
+        designation: "Content Head",
+        image: "https://i.ibb.co/RTkPrN9w/Screenshot-2025-01-30-173932.png", 
+        description: "I like my planet the same way I like my cereal: with no aliens on it.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/yash-motiani070/",
+          instagram: "https://www.instagram.com/yashonlyme7",
+          x:"https://x.com/Yashonlyme7",
+        },
+      },
+
+      {
+        name: "Manasvi Srivastava ",
+        designation: "Content Member",
+        image: "https://i.ibb.co/cnfW0yL/Screenshot-2025-01-30-181530.png", 
+        description: "Living life to the fullest:)",
+        socials: {
+          instagram: "https://www.instagram.com/manasvii.x",
+        },
+      },
+
+    ],
+  },
+  // social media
+  {
+    designation: "Social Team",
+    members: [
+      {
+        name: "Kartik Gupta",
+        designation: "Social Media Head",
+        image: "https://i.ibb.co/qLvXv7Fp/Screenshot-2025-01-30-171135.png", 
+        description: "Stars await for each of us.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/kartik-gupta-038473322",
+          instagram: "https://www.instagram.com/_kart1k_/",
+        },
+      },
+
+      {
+        name: "Aditya Sharma",
+        designation: "Social Media Member",
+        image: "https://i.ibb.co/jvntmjtS/Screenshot-2025-01-30-174434.png", 
+        description: "Curiosity tracks some important questions.",
+        socials: {
+          instagram: "https://www.instagram.com/anikett._.k",
+        },
+      },
+    
+    ],
+  },
+  // multimedia
+  {
+    designation: "Multi-Media Team",
+    members: [
+      {
+        name: "Shardul Dhekane (𝙎𝙋𝙄𝙍𝙄𝙏)",
+        designation: "Multi-Media Head",
+        image: "https://i.ibb.co/xSgH7NMd/Screenshot-2025-01-30-175539.png", 
+        description: "Live Laugh Love",
+        socials: {
+          linkedin: "www.linkedin.com/in/shardul-dhekane",
+          instagram: "www.instagram.com/probably_its_spirit",
+          x:"https://x.com/ProbablyIts_Me"
+        },
+      },
+
+      {
+        name: "Awush Swami",
+        designation: "Multi-Media Member",
+        image: "/ayush.JPG",
+        description: "Focusing on clicking photos",
+        socials: {
+          github: "https://github.com/janedoe",
+          linkedin: "https://linkedin.com/in/janedoe",
+        },
+      },
+
+      {
+        name: "Aditya Sharma",
+        designation: "Multi-Media Member",
+        image: "https://i.ibb.co/mCqWBXpw/Screenshot-2025-01-30-180924.png", 
+        description: "To infinity and beyond.",
+        socials: {
+          instagram: "https://www.instagram.com/abhi_ncd/",
+          linkedin:"https://www.linkedin.com/in/abhimanyu-narang-768758326/",
+        },
+      },
+    
+    ],
+  },
+  // finance core
+  {
+    designation: "Finance Team",
+    members: [
+      {
+        name: "Anannyo Roy",
+        designation: "Finance Core Member",
+        image: "https://i.ibb.co/Csn4PBVL/Screenshot-2025-01-30-181217.png", 
+        description: "🗣️🔥",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/anannyo-roy/",
+          instagram: "https://www.instagram.com/help_pls_idk",
+          x:"https://x.com/ProbablyIts_Me"
+        },
+      },
+
+      {
+        name: "Awush Swami",
+        designation: "Multi-Media Member",
+        image: "/ayush.JPG",
+        description: "Focusing on clicking photos",
+        socials: {
+          github: "https://github.com/janedoe",
+          linkedin: "https://linkedin.com/in/janedoe",
+        },
+      },
+
+      {
+        name: "Aditya Sharma",
+        designation: "Multi-Media Member",
+        image: "https://i.ibb.co/mCqWBXpw/Screenshot-2025-01-30-180924.png", 
+        description: "To infinity and beyond.",
+        socials: {
+          instagram: "https://www.instagram.com/abhi_ncd/",
+          linkedin:"https://www.linkedin.com/in/abhimanyu-narang-768758326/",
+        },
+      },
+    
     ],
   },
 ];
