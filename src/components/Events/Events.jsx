@@ -9,7 +9,7 @@ const Events = () => {
       date: "2025-02-15",
       time: "TBD",
       location: "Bennett University ",
-      image: "https://i.ibb.co/bgf4Q2v1/Screenshot-2025-01-31-221627.png",
+      image: "https://i.ibb.co/99KgtCRQ/Screenshot-2025-01-31-223840.png",
       description:"StellarVision invites passionate astronomy enthusiasts to present visionary ideas about the wonders of theoretical physics, cosmology and mechanics.",
       highlighted: true,
       registerLink: "https://unstop.com/events/stellar-vision-uphoria-2025-bennett-university-bu-greater-noida-1367697"
