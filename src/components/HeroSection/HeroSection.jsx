@@ -1,70 +1,69 @@
 import { Instagram, Linkedin } from 'lucide-react';
 import { Telescope, BookOpen, Globe } from 'lucide-react';
+import { motion } from 'framer-motion';
 import Card from './CardGrid';
 import Stars from './Stars';
-const HeroSection = () => {
-  // Generate stars as small dots
-  
 
+const HeroSection = () => {
   const cardData = [
-    {
-      icon: Telescope,
-      title: "Observe",
-      image: "/cool3.png",
-      description: "Night sky tracking and telescope sessions",
-    },
-    {
-      icon: BookOpen,
-      title: "Research",
-      image: "/cool1.png",
-      description: "Collaborative astronomical research projects",
-    },
-    {
-      icon: Globe,
-      title: "Educate",
-      image: "/cool2.png",
-      description: "Public workshops and stargazing events",
-    },
+    { icon: Telescope, title: 'Observe', image: '/cool3.png', description: 'Night sky tracking and telescope sessions' },
+    { icon: BookOpen, title: 'Research', image: '/cool1.png', description: 'Collaborative astronomical research projects' },
+    { icon: Globe, title: 'Educate', image: '/cool2.png', description: 'Public workshops and stargazing events' },
   ];
 
   return (
-    <div className=" bg-black pt-24 pb-16 px-4 overflow-hidden">
-     <Stars/>
-
+    <div className="relative bg-black pt-24 pb-16 px-4 overflow-hidden">
+      <Stars />
       <div className="relative z-10 container mx-auto px-4 flex flex-col justify-center items-center min-h-screen text-center">
-        {/* Large Centered Title */}
-        <h1 className="text-[10vw] font-bold uppercase tracking-widest text-blue-200 mt-24 mb-12 text-center w-full">
+        {/* Animated Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-[10vw] font-bold uppercase tracking-widest bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent mt-24 mb-12"
+        >
           ASTRONOMY BU
-        </h1>
+        </motion.h1>
 
         {/* What We Do Section */}
         <div className="max-w-6xl rounded-xl p-8 mb-12">
-          <h2 className="text-4xl font-semibold mb-6 text-blue-300 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2 }}
+            className="text-4xl font-semibold mb-6 text-blue-300"
+          >
             Exploring the Cosmos, One Star at a Time
-          </h2>
-          <p className="text-xl leading-relaxed mb-24 text-white text-center">
-            We are more than just a club -we are a community of passionate stargazers,
-            aspiring astronomers, and cosmic explorers. From telescope observations
-            to deep space research, we bring the universe closer to you.
-          </p>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            className="text-xl leading-relaxed mb-24 text-white"
+          >
+            We are more than just a club - we are a community of passionate stargazers, aspiring astronomers, and cosmic explorers. From telescope observations to deep space research, we bring the universe closer to you.
+          </motion.p>
 
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-              {cardData.map((card, index) => (
-                <Card
-                  key={index}
-                  icon={card.icon}
-                  title={card.title}
-                  image={card.image}
-                  description={card.description}
-                />
-              ))}
-            </div>
-          </div>
+          {/* Card Grid */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+          >
+            {cardData.map((card, index) => (
+              <Card key={index} icon={card.icon} title={card.title} image={card.image} description={card.description} />
+            ))}
+          </motion.div>
         </div>
 
         {/* Social Media Links */}
-        <div className="flex space-x-6 mb-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.8 }}
+          className="flex space-x-6 mb-8"
+        >
           {[
             { Icon: Instagram, url: 'https://www.instagram.com/astronomy_bu/', color: 'text-pink-500' },
             { Icon: Linkedin, url: 'https://www.linkedin.com/company/astronomy-club-bennett-university/', color: 'text-blue-600' },
@@ -79,10 +78,15 @@ const HeroSection = () => {
               <Icon size={36} />
             </a>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Special Credits Section */}
-        <div className="mt-12 bg-blue-900/30 p-6 rounded-xl max-w-2xl mx-auto">
+        {/* Credits Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="mt-12 bg-blue-900/30 p-6 rounded-xl max-w-2xl mx-auto"
+        >
           <h3 className="text-3xl font-bold text-blue-200 mb-4">Website Crafted By</h3>
           <div className="flex flex-col items-center">
             <img
@@ -111,10 +115,10 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
 export default HeroSection;

@@ -7,22 +7,16 @@ import Stars from '../HeroSection/Stars';
 const TeamSection = () => {
   return (
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden">
-      {/* Star dots container */}
       <Stars />
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Our Team</h2>
-
-        {/* Map through each team section */}
         {teamMembers.map((section) => (
           <div key={section.designation} className="mb-16">
             <h3 className="text-2xl font-semibold text-purple-400 mb-8 text-center">
               {section.designation}
             </h3>
-
-            {/* Check if the section has less than 4 members */}
             {section.members.length < 3 ? (
               <div className="flex justify-center gap-4">
-                {/* If less than 4 members, render them without carousel */}
                 {section.members.map((member) => (
                   <div key={member.name} className="p-4 w-64">
                     <TeamMemberCard {...member} />
@@ -30,7 +24,6 @@ const TeamSection = () => {
                 ))}
               </div>
             ) : (
-              // If 4 or more members, render them using Slider
               <Slider {...sliderSettings}>
                 {section.members.map((member) => (
                   <div key={member.name} className="p-4 w-64">
@@ -292,7 +285,6 @@ const teamMembers = [
     ],
   },
 ];
-
 const sliderSettings = {
   infinite: true,
   speed: 1000,
@@ -316,6 +308,5 @@ const sliderSettings = {
     },
   ],
 };
-
 
 export default TeamSection;
