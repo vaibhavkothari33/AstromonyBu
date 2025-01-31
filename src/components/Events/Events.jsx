@@ -1,9 +1,21 @@
 import { Calendar, Clock, MapPin, Star } from 'lucide-react';
 import Stars from '../HeroSection/Stars';
+
 const Events = () => {
   const events = [
     {
       id: 1,
+      title: "Stellar Vision",
+      date: "2025-02-15",
+      time: "TBD",
+      location: "Bennett University ",
+      image: "https://i.ibb.co/bgf4Q2v1/Screenshot-2025-01-31-221627.png",
+      description:"StellarVision invites passionate astronomy enthusiasts to present visionary ideas about the wonders of theoretical physics, cosmology and mechanics.",
+      highlighted: true,
+      registerLink: "https://unstop.com/events/stellar-vision-uphoria-2025-bennett-university-bu-greater-noida-1367697"
+    },
+    {
+      id: 2,
       title: "Star Gazing Night",
       date: "2024-01-15",
       time: "20:00 - 23:00",
@@ -11,10 +23,10 @@ const Events = () => {
       image: "/cool3.png",
       description:
         "Join us for an enchanting evening of stargazing. We'll be observing Jupiter and its moons, along with deep-sky objects visible this season.",
-      highlighted: true,
+      highlighted: false,
     },
     {
-      id: 2,
+      id: 3,
       title: "Workshop on Astrophotography",
       date: "2024-02-10",
       time: "16:00 - 18:00",
@@ -24,7 +36,7 @@ const Events = () => {
         "Learn the basics of astrophotography, from camera settings to post-processing techniques. Bring your DSLR camera if you have one!",
     },
     {
-      id: 3,
+      id: 4,
       title: "Solar Eclipse Watch Party",
       date: "2024-03-20",
       time: "14:30 - 16:30",
@@ -34,7 +46,7 @@ const Events = () => {
         "Experience the partial solar eclipse with proper safety equipment. Educational session included about the mechanics of eclipses.",
     },
     {
-      id: 4,
+      id: 5,
       title: "Space Exploration Lecture",
       date: "2024-03-25",
       time: "10:00 - 12:00",
@@ -45,11 +57,9 @@ const Events = () => {
     },
   ];
 
-
-
   return (
     <div className="relative min-h-screen bg-black pt-24 pb-16 px-4 overflow-hidden text-white">
-     <Stars/>
+      <Stars />
       <div className="max-w-7xl mx-auto relative">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Our Events
@@ -108,6 +118,16 @@ const Events = () => {
                   <p className="text-gray-300 leading-relaxed mb-8">
                     {event.description}
                   </p>
+
+                  {/* Register Now Button for Stellar Vision */}
+                  {event.title === "Stellar Vision" && (
+                    <a target='_blank'
+                      href={event.registerLink}
+                      className="inline-block bg-purple-500 text-white py-2 px-6 rounded-lg hover:bg-purple-400 transition-colors"
+                    >
+                      Register Now
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
