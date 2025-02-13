@@ -225,7 +225,7 @@ const teamMembers = [
         name: "Shardul Dhekane (𝙎𝙋𝙄𝙍𝙄𝙏)",
         designation: "Multi-Media Head",
         image: "https://i.ibb.co/xSgH7NMd/Screenshot-2025-01-30-175539.png",
-        description: "Live Laugh Love",
+        description: "Live Love Laugh ",
         socials: {
           linkedin: "www.linkedin.com/in/shardul-dhekane",
           instagram: "www.instagram.com/probably_its_spirit",
